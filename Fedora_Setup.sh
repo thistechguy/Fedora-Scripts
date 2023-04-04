@@ -21,3 +21,5 @@ sudo dnf install code
 #Install Steam
 sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
 sudo dnf install steam
+
+read -p "All done! Press enter to continue"

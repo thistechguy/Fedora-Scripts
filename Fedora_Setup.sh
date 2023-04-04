@@ -1,11 +1,16 @@
 #!/bin/bash
 
 #Update the system
-sudo dnf update
+sudo dnf update --refresh
 
-#Install Google Chrome Beta
-sudo dnf config-manager --set-enabled google-chrome
-sudo dnf install google-chrome-Beta
+#Enable RPM Fusion Repos
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+#Install Microsoft Edge
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
+sudo dnf install microsoft-edge-stable
 
 #Install VSCode
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc

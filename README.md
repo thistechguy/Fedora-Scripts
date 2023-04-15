@@ -6,6 +6,7 @@ This includes adding the following:
 <li>Adding the RPM Fusion Repos (Free and Non-Free)</li>
 <li>Adding Flathub</li>
 <li>Installing Microsoft Edge</li>
+<li>Install Microsoft Fonts</li>
 <li>Installing VSCode</li>
 <li>Installing Steam</li><br>
 

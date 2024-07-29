@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Read input to enter hostname
+read -p "Enter in your desired hostname: " hostname
+
+echo "Changing hostname to $hostname..."
+sudo hostnamectl set-hostname --static $hostname
+
 #Update the system
 sudo dnf update --refresh
 

@@ -17,9 +17,7 @@ sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfre
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #Install Microsoft Edge
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge
-sudo dnf install microsoft-edge-stable
+flatpak install flathub com.microsoft.Edge
 
 #Install Microsoft Fonts 
 sudo dnf install curl cabextract xorg-x11-font-utils fontconfig

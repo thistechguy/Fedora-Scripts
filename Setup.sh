@@ -33,4 +33,13 @@ sudo dnf install code
 sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
 sudo dnf install steam
 
+#Install Discord
+sudo dnf install discord
+
+#Setup Driverless Printing https://fedoraproject.org/wiki/How_to_debug_printing_problems#How_to_find_out_whether_my_printer_is_capable_of_driverless_printing?
+sudo systemctl start avahi-daemon
+sudo systemctl enable cups.socket
+sudo systemctl start cups.socket
+sudo dnf install avahi-tools
+
 read -p "All done! Press enter to continue"
